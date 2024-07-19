@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Esteemeter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Self-Esteemeter</h1>
+        <div class="meter">
+            <div class="bar" id="bar"></div>
+        </div>
+        <div class="buttons">
+            <button class="positive" onclick="adjustMeter(1)">+</button>
+            <button class="positive" onclick="adjustMeter(0.5)">+ (half)</button>
+            <button class="negative" onclick="adjustMeter(-0.5)">- (half)</button>
+            <button class="negative" onclick="adjustMeter(-1)">-</button>
+            <button class="reset" onclick="resetMeter()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

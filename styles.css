@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Fondo claro y agradable */
+    margin: 0;
+    background-image: url('background.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00796b; /* Color del título */
+}
+
+.meter {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 2px solid #00796b; /* Borde de la barra */
+}
+
+.bar {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttons .positive {
+    background-color: #4caf50; /* Verde */
+}
+
+.buttons .negative {
+    background-color: #f44336; /* Rojo */
+}
+
+.buttons .reset {
+    background-color: #9e9e9e; /* Gris */
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .buttons button {
+        width: 100px;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
